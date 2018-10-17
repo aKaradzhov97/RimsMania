@@ -1182,7 +1182,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var HomeComponent = /** @class */ (function () {
     function HomeComponent(authService) {
         this.authService = authService;
-        this.currentImage = '../../assets/slideshow/slide1.jpg';
+        this.currentImage = 'assets/slideshow/slide1.jpg';
         if (localStorage.getItem('user')) {
             this.username = JSON.parse(localStorage.getItem('user')).username;
         }
@@ -1190,14 +1190,14 @@ var HomeComponent = /** @class */ (function () {
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
         setTimeout(function () {
-            if (_this.currentImage === '../../assets/slideshow/slide1.jpg') {
-                _this.currentImage = '../../assets/slideshow/slide2.jpg';
+            if (_this.currentImage === 'assets/slideshow/slide1.jpg') {
+                _this.currentImage = 'assets/slideshow/slide2.jpg';
             }
-            else if (_this.currentImage === '../../assets/slideshow/slide2.jpg') {
-                _this.currentImage = '../../assets/slideshow/slide3.jpg';
+            else if (_this.currentImage === 'assets/slideshow/slide2.jpg') {
+                _this.currentImage = 'assets/slideshow/slide3.jpg';
             }
-            else if (_this.currentImage === '../../assets/slideshow/slide3.jpg') {
-                _this.currentImage = '../../assets/slideshow/slide1.jpg';
+            else if (_this.currentImage === 'assets/slideshow/slide3.jpg') {
+                _this.currentImage = 'assets/slideshow/slide1.jpg';
             }
             _this.ngOnInit();
         }, 3000);
